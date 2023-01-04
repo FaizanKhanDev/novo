@@ -1,0 +1,84 @@
+{% load static %}
+<!-- ====  CLients Logos ==== -->
+    <section class="section brands">
+      <div class="brand-layout container">
+        <div class="swiper-container slider-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand1.png' %}" alt="" class="blog-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand2.png' %}" alt="" class="blog-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand3.png' %}" alt="" class="blog-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand4.png' %}" alt="" class="blog-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand5.png' %}" alt="" class="blog-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand6.png' %}" alt="" class="blog-img">
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static 'img/brand7.png' %}" alt="" class="blog-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- ====  CLients Logos ==== -->
+
+
+<!-- ====  Social icon ==== -->
+
+    <div class="socialicon-footer">
+      <a href=""><ion-icon name="logo-facebook"></ion-icon> Facebook <p></p></a>
+      <a href=""><ion-icon name="logo-instagram"></ion-icon>instagram <p></p></a>
+      <a href=""><ion-icon name="logo-twitter"></ion-icon>twitter <p></p></a>
+    </div>
+
+<!-- ====  Social icon ==== -->
+
+<!-- ==== footer  ==== -->
+
+    <footer>
+      <div class="footer-sec_1">
+        <h1>NOVO</h1>
+        <br />
+       <p>The world without photography will be meaningless
+        to us if there is no light and color, which opens up our minds and expresses passion</p> 
+       
+      </div>
+      <div class="footer-sec_1">
+        <h2 class="text-center">Latest Photos</h2>
+        <div class="footer-items">
+          <ul>
+            {%  for navitems in navitems %}
+              <li><a href="/">{{navitems.navitems_1}}</a></li>
+              <li><a href="}">{{navitems.navitems_2}}</a></li>
+              <li><a href="#">{{navitems.navitems_3}}</a></li>
+              <li><a href="{% url 'blog' %}">{{navitems.navitems_4}}</a></li>
+              <li><a href="#" style="cursor: pointer;">{{navitems.navitems_5}}</a></li>
+              <li><a href="{% url 'blog' %}">{{navitems.navitems_6}}</a></li>
+            {% endfor %} 
+        </ul>
+        </div>
+        
+      </div>
+      <div class="footer-sec_1">
+        <h2>Contacts</h2>
+        <br />
+        <p>Phone: &nbsp; &nbsp; &nbsp; +1 (800) 456 37 11</p>
+        <p>Email: &nbsp; &nbsp; &nbsp; support@promo-theme.com</p>
+        <p>Copyright © 2021 Promo Theme. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <br />
+<!-- ==== footer  ==== -->
+
+
